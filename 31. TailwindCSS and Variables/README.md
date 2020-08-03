@@ -154,6 +154,8 @@ return (
 );
 ```
 
+That's it! we've learnt how to use CSS variables with TailwindCSS.
+
 ## Appendix
 
 - [Example Project](https://gitlab.com/hmajid2301/personal-site/-/tree/fa01433eecec728427763e1e2b2cdd9710a9c197)
