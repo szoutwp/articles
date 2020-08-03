@@ -9,13 +9,13 @@ published: true
 cover_image: "images/cover.jpg"
 ---
 
-TailwindCSS allows us to use pre-defined classes instead defining our own css styles. In the article, we will go over
-how we can use Custom properties (sometimes referred to as CSS variables or cascading variables) with TailwindCSS.
+TailwindCSS allows us to use pre-defined classes instead of defining our CSS styles. In the article, we will go over
+how we can use Custom properties (sometimes referred to as CSS variables or cascading variables) with TailwindCSS..
 
 ## Setup
 
-First follow the installation guide found [here](https://tailwindcss.com/docs/installation/#2-add-tailwind-to-your-css).
-This will show you how you can add TailwindCSS to your current project. For part 2 I will assume you called your css
+First, follow the installation guide found [here](https://tailwindcss.com/docs/installation/#2-add-tailwind-to-your-css).
+This will show you how you can add TailwindCSS to your current project. For part 2 I will assume you called your CSS
 file `global.css`, this is the file that contains `@tailwind base;` etc.
 
 ## global.css
@@ -50,12 +50,12 @@ export const wrapRootElement = ({ element }) => (
 );
 ```
 
-This will wrap all of our pages in the class `root` and `overflow-hidden`, css class from TailwindCSS.
+This will wrap all of our pages in the class `root` and `overflow-hidden`, CSS class from TailwindCSS.
 
 ## tailwind.config.js
 
-Now we've define some CSS variables how can we use them with tailwind css ? Simple we update our tailwind config file
-with some the new CSS variables. Here we simply wnat to extend the config to add new colour values.
+Now we've defined some CSS variables how can we use them with Tailwindcss? Simple we update our tailwind config file
+with some the new CSS variables. Here we simply want to extend the config to add new colour values.
 
 ```js
 module.exports = {
@@ -74,7 +74,7 @@ module.exports = {
 };
 ```
 
-The synatx is very similar to how we would use the variables normally with CSS where it would normally look like:
+The syntax is very similar to how we would use the variables normally with CSS where it would normally look like:
 
 ```css
 element {
@@ -111,7 +111,7 @@ const Tag = tw.span`text-accent`;
 export default Logo;
 ```
 
-> INFO: I'm using the `twin.macro` library so we can use it with CSS-in-JS.
+> INFO: I'm using the `twin.macro` the library so we can use it with CSS-in-JS.
 
 To use our variables we just use them like so `text-primary` will use the value we defined above, `#367ee9`. Now
 if we changed the value in the `global.css` file it will automatically change here as well.
@@ -136,7 +136,7 @@ This can be easily extended to add a dark/light mode, we can extend our `global.
 
 Then we can use a theme context to get the current theme I've written about
 [here](https://dev.to/hmajid2301/react-hooks-context-local-storage-3job). Then we can do something like this again
-this would be element that wraps the whole HTML body. We get the current theme then use that to determine which class
+this would be an element that wraps the whole HTML body. We get the current theme then use that to determine which class
 to set, this will then set the variables. If the theme changes the variable values will change dark -> light or
 light -> dark etc.
 
