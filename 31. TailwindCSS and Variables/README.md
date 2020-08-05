@@ -54,8 +54,8 @@ This will wrap all of our pages in the class `root` and `overflow-hidden` CSS cl
 
 ## tailwind.config.js
 
-Now we've defined some CSS variables how can we use them with Tailwindcss? Simple we update our tailwind config file
-with some the new CSS variables. Here we simply want to extend the config to add new colour values.
+Now we've defined some CSS variables how can we use them with Tailwindcss? Simple, we update our tailwind config file
+with some of the new CSS variables. Here we simply want to extend the config to add new colour values.
 
 ```js
 module.exports = {
@@ -134,10 +134,10 @@ This can be easily extended to add a dark/light mode, we can extend our `global.
 }
 ```
 
-Then we can use a theme context to get the current theme I've written about
+We can use a theme context to get the current theme I've written about
 [here](https://dev.to/hmajid2301/react-hooks-context-local-storage-3job). Then we can do something like this again
 this would be an element that wraps the whole HTML body. We get the current theme then use that to determine which class
-to set, this will then set the variables. If the theme changes the variable values will change dark -> light or
+to set, this will then set the variables. If the theme changes, the variable values will change dark -> light or
 light -> dark etc.
 
 ```jsx
