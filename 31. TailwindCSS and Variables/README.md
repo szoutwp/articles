@@ -9,18 +9,18 @@ published: true
 cover_image: "images/cover.jpg"
 ---
 
-TailwindCSS allows us to use pre-defined classes instead of defining our CSS styles. In the article, we will go over
-how we can use Custom properties (sometimes referred to as CSS variables or cascading variables) with TailwindCSS..
+TailwindCSS allows us to use pre-defined classes instead of defining our CSS styles. In this article, we will go over
+how we can use Custom properties (sometimes referred to as CSS variables or cascading variables) with TailwindCSS.
 
 ## Setup
 
 First, follow the installation guide found [here](https://tailwindcss.com/docs/installation/#2-add-tailwind-to-your-css).
 This will show you how you can add TailwindCSS to your current project. For part 2 I will assume you called your CSS
-file `global.css`, this is the file that contains `@tailwind base;` etc.
+file `global.css`. This is the file that contains `@tailwind base;` etc.
 
 ## global.css
 
-First we need to edit our tailwind css file so it looks something like this:
+First, we need to edit our TailwindCSS file so it looks something like this:
 
 ```css
 @tailwind base;
@@ -42,7 +42,7 @@ I wrap my entire body in an element with class `root` or id `root`, so that any 
 
 ### gatsby-browser.js (optional)
 
-If you're using Gatsby you can add the following to your `gatsby-browser.js` file:
+If you're using Gatsby, you can add the following to your `gatsby-browser.js` file:
 
 ```js
 export const wrapRootElement = ({ element }) => (
@@ -50,7 +50,7 @@ export const wrapRootElement = ({ element }) => (
 );
 ```
 
-This will wrap all of our pages in the class `root` and `overflow-hidden`, CSS class from TailwindCSS.
+This will wrap all of our pages in the class `root` and `overflow-hidden` CSS class from TailwindCSS.
 
 ## tailwind.config.js
 
@@ -84,7 +84,7 @@ element {
 
 ## Logo.tsx
 
-Now how do we use our variable ? Again pretty straight forward just like our normal tailwind classes. Let's imagine
+Now how do we use our variable? Again pretty straight forward just like our normal tailwind classes. Let's imagine
 we have a React component called `Logo.tsx`, defined like so:
 
 ```tsx
@@ -159,3 +159,4 @@ That's it! we've learnt how to use CSS variables with TailwindCSS.
 ## Appendix
 
 - [Example Project](https://gitlab.com/hmajid2301/personal-site/-/tree/fa01433eecec728427763e1e2b2cdd9710a9c197)
+- [Icons from FlatIcon](https://flaticon.com)
