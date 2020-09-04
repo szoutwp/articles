@@ -160,8 +160,8 @@ The same query we use to get other information such as title and contents. All w
 to the `markdownRemark` part of our query. This will return as the name suggests the absolute path to the file,
 i.e. `/home/haseeb/projects/personal/articles/34. Gatsby edit button/source_code/content/blog/hello-world/index.md`..
 
-```js:title=src/templates/blog-post.js
-export const pageQuery = graphql`{11}
+```js{11}:title=src/templates/blog-post.js
+export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
