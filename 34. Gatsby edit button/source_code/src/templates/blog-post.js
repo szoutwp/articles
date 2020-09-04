@@ -11,6 +11,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
+  function getGitMarkdownUrl() {
+    const pathConst = "/articles/"
+    const gitURL = "https://gitlab.com/hmajid2301/articles"
+    const sliceIndex =
+      post.fileAbsolutePath.indexOf(pathConst) + pathConst.length
+    const markdownFileGitPath = post.fileAbsolutePath.slice(sliceIndex)
+    const blogPostOnGit = `${gitURL}/-/blob/master/${markdownFileGitPath}`
+    return blogPostOnGit
+  }
+
+  const gitMarkdownUrl = getGitMarkdownUrl()
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -36,6 +48,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             {post.frontmatter.date}
           </p>
+
+          <a href={gitMarkdownUrl} rel="noreferrer" target="_blank">
+            EDIT THIS POST
+          </a>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -91,6 +107,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fileAbsolutePath
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
