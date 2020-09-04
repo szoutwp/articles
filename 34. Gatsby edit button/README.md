@@ -6,7 +6,7 @@ slug: "gatsby-edit-button"
 canonical_url: "https://haseebmajid.dev/blog/gatsby-edit-button/"
 date: "2020-09-07"
 published: true
-cover_image: "images/cover.png"
+cover_image: "images/cover.jpg"
 ---
 
 In this article, we will look at how we can add an "edit post" button, to your Gatsby blog. When this button is clicked it will take the user to your markdown file, on github/gitlab/ that was used to generate this blog post.
