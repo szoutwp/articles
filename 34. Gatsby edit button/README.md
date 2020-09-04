@@ -1,6 +1,6 @@
 ---
 title: "Add an 'edit post' button to your Gatsby blog"
-tags: ["gatsby", "react", "git", "webdev"]
+tags: ["gatsby", "react", "git", "javascript"]
 license: "public-domain"
 slug: "gatsby-edit-button"
 canonical_url: "https://haseebmajid.dev/blog/gatsby-edit-button/"
