@@ -13,6 +13,12 @@ In this article, we will look at how we can add an "edit post" button, to your G
 
 `youtube: rALo_BzGKs8`
 
+```toc
+exclude: Table of Contents
+from-heading: 1
+to-heading: 3
+```
+
 ## Setup
 
 Before we add the edit button to a Gatsby blog, let's set up a simple Gatsby site using the `Gatsby blog starter`,
